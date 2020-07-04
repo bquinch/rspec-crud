@@ -32,6 +32,7 @@ RSpec.describe User, type: :model do
     expect(user.email).to eq("george@abitbol.com")
     expect(user.email).to be_a(String)
     expect(user).to be_valid
+    expect(user.email).to match(/\A[^@\s]+@[^@\s]+\z/)
     user.email = nil
     expect(user).to_not be_valid
   end
