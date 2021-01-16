@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe MessagesController, type: :controller do
   let(:message_params) { { from: "basile.quinchon@gmail.com", name: "Basile", subject: "Lolo", content: "Lala" } }
